@@ -75,8 +75,8 @@ const Sidebar = ({ lang, setLang, sideBarOpen, setSideBarOpen }) => {
         </Link>
       </div>
       <div className="sidenav__social">
-        <a href="https://www.google.com/" className="fa fa-facebook-f"></a>
-        <a href="https://www.google.com/" className="fa fa-instagram"></a>
+        <a href="https://www.google.com/"><i className="fa fa-facebook-f"></i></a>
+        <a href="https://www.google.com/"><i className="fa fa-instagram"></i></a>
       </div>
       <LangChange
         area={"sidenav"}

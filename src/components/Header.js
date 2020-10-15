@@ -75,8 +75,8 @@ const Header = ({ lang, setLang, sideBarOpen, setSideBarOpen }) => {
           </Link>
         </div>
         <div className="header__end">
-          <a href="#" className="fa fa-facebook-f header__end-link"></a>
-          <a href="#" className="fa fa-instagram header__end-link"></a>
+          <a href="https://www.google.com/" className="header__end-link"><i className="fa fa-facebook-f"></i></a>
+          <a href="https://www.google.com/" className="header__end-link"><i className="fa fa-instagram"></i></a>
           <LangChange area={"header"} lang={lang} setLang={setLang} />
         </div>
         <div className="sidenav__btn" onClick={() => setSideBarOpen(true)}>

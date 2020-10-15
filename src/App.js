@@ -16,9 +16,8 @@ function App() {
   const parallaxStyle = {
     backgroundPositionY: `${bgScroll}%`,
   };
-  let touchstartX,
-    touchendX = 0;
   useEffect(() => {
+    let touchstartX, touchendX = 0;
     if (window.location.hash) {
       setLang(window.location.hash.toString().replace("#", ""));
     }
