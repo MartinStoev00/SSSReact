@@ -10,7 +10,15 @@
   align-content: center;
   align-items: center;
   &__logo {
+    width: 100px;
     margin: 30px;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0 0 5 rgba(255, 255, 255, 1);
+    }
+    img {
+      width: 100px;
+    }
   }
   &__list {
     margin: 15px 0 30px;

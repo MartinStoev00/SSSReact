@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "../pics/peak_logo.png";
 import LangChange from "./small/LangChange";
-import { Link } from "react-scroll";
-import { animateScroll as scroll } from "react-scroll";
+import Anchor from "./small/Anchor";
+import LinkPages from "./small/LinkPages";
+import LogoTop from "./small/LogoTop";
 
 const Sidebar = ({ lang, setLang, sideBarOpen, setSideBarOpen }) => {
   return (
@@ -13,70 +13,20 @@ const Sidebar = ({ lang, setLang, sideBarOpen, setSideBarOpen }) => {
       <button className="closebtn" onClick={() => setSideBarOpen(false)}>
         &times;
       </button>
-      <div
-        className="sidenav__logo"
-        onClick={() => {
-          scroll.scrollToTop();
-          setSideBarOpen(false);
-        }}
-      >
-        <img src={Logo} alt="Logo" />
-      </div>
-      <div className="sidenav__links">
-        <Link
-          onClick={() => setSideBarOpen(false)}
-          to="description"
-          offset={-100}
-          smooth={true}
-          duration={1000}
-        >
-          {lang === "EN" && <span>SERVICES</span>}
-          {lang === "BG" && <span>Услуги</span>}
-        </Link>
-        <Link
-          onClick={() => setSideBarOpen(false)}
-          to="boosting"
-          offset={-100}
-          smooth={true}
-          duration={1000}
-        >
-          {lang === "EN" && <span>CONSULTING</span>}
-          {lang === "BG" && <span>Консултиране</span>}
-        </Link>
-        <Link
-          onClick={() => setSideBarOpen(false)}
-          to="making"
-          offset={-100}
-          smooth={true}
-          duration={1000}
-        >
-          {lang === "EN" && <span>TECHNOLOGY</span>}
-          {lang === "BG" && <span>Технология</span>}
-        </Link>
-        <Link
-          onClick={() => setSideBarOpen(false)}
-          to="results"
-          offset={-100}
-          smooth={true}
-          duration={1000}
-        >
-          {lang === "EN" && <span>PRICING</span>}
-          {lang === "BG" && <span>Цена</span>}
-        </Link>
-        <Link
-          onClick={() => setSideBarOpen(false)}
-          to="footer"
-          offset={-100}
-          smooth={true}
-          duration={1000}
-        >
-          {lang === "EN" && <span>CONTACT</span>}
-          {lang === "BG" && <span>Контакт</span>}
-        </Link>
-      </div>
+      <LogoTop className="sidenav__logo" setSideBarOpen={setSideBarOpen} />{" "}
+      <LinkPages lang={lang} setSideBarOpen={setSideBarOpen} />
+      <Anchor
+        setSideBarOpen={setSideBarOpen}
+        lang={lang}
+        className="sidenav__links"
+      />
       <div className="sidenav__social">
-        <a href="https://www.google.com/"><i className="fa fa-facebook-f"></i></a>
-        <a href="https://www.google.com/"><i className="fa fa-instagram"></i></a>
+        <a href="https://www.google.com/">
+          <i className="fa fa-facebook-f"></i>
+        </a>
+        <a href="https://www.google.com/">
+          <i className="fa fa-instagram"></i>
+        </a>
       </div>
       <LangChange
         area={"sidenav"}

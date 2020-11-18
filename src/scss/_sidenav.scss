@@ -18,6 +18,9 @@
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    .pageLink {
+      display: block;
+    }
     button {
       border: none;
       background-color: rgba(0, 0, 0, 0);

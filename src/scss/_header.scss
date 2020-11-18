@@ -9,7 +9,11 @@
   justify-content: space-between;
   align-content: center;
   align-items: center;
+  height: 43px;
   padding: 15px 25px;
+  top: 0;
+  left: 0;
+  right: 0;
   @include main-color-transparent(0.9);
   &__logo {
     display: flex;
@@ -32,21 +36,21 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-  }
-  &__links {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 18px;
-    margin: 0 15px;
-    transition: 0.3s;
-    &:hover {
-      cursor: pointer;
-      text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+    & > * {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 18px;
+      margin: 0 15px;
+      transition: 0.3s;
+      &:hover {
+        cursor: pointer;
+        text-shadow: 0px 0px 15px rgba(255, 255, 255, 0.7);
+      }
     }
   }
   &__end {
-    width: 180px;
+    width: 480px;
     &-link {
       transition: 0.3s;
       margin: 5px 10px;
@@ -160,7 +164,7 @@
         width: 130px;
       }
     }
-    &__lang {
+    &__group {
       display: none;
     }
   }
