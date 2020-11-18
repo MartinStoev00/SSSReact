@@ -1097,15 +1097,6 @@ body {
           align-items: center;
 }
 
-.hero:hover > .hero__bg {
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-  -webkit-animation: shakeanimation 0.8s infinite ease;
-          animation: shakeanimation 0.8s infinite ease;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
 .hero__bg {
   position: absolute;
   top: 0;
@@ -1151,7 +1142,7 @@ body {
 
 .hero__text h3 {
   font-size: 35px;
-  color: #06264d;
+  color: white;
   margin: 20px 0 30px;
   font-weight: 100;
 }
